@@ -1,0 +1,82 @@
+html {
+    background: #f0f0f0;
+    font: 14px Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;}
+
+h1, h2 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #34495e;}
+
+#page {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+.entete {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #3498db;}
+
+.entete .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid #3498db;}
+
+.entete .logo {
+    width: 350px;
+    height: auto;
+    margin: 10px;}
+
+#aboutme {
+    padding: 20px;}
+
+#aboutme p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;}
+
+#aboutme table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;}
+
+#aboutme table, #aboutme th, #aboutme td {
+    border: 1px solid #e0e0e0;}
+
+#aboutme th, #aboutme td {
+    padding: 10px;
+    text-align: center;}
+
+#aboutme th {
+    background: #3498db;
+    color: #fff;}
+
+#aboutme ol {
+    padding-left: 20px;}
+
+#aboutme li {
+    margin: 10px 0;
+    color: #333;}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #3498db;
+    background: #f4f4f4;
+    margin-top: 20px;}
+
+    footer a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;}
