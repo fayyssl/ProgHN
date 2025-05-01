@@ -1,0 +1,224 @@
+html { /* pour cette partie, commentez et personnalisez au moins 12lignes. exemple ligne2 : font-size: 16px; font-size signifie "taille des caractères". px signifie .. et diffère de rem pour x raisons. */
+	font-size: 14px; /* taille du texte, unité fixe donc change pas si on zoom ou ppas */
+	width: 100vw; /* largeur de l'element, ici il prends 100% de la fenetre*/
+	font-family: "Lucida Console", "Courier New", monospace; /* nom de la police qu'on utilise*/
+	background-color:#191934; /* couleur qu'on choisi*/
+}
+
+h1 {
+	font-size: 5.5rem; /*taille du texte mais ici pas fixe, il est relatif donc s'adapte a l'ecran */
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h1, h2 {
+	color: #2b7430;
+	text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #cbbc7b, 0px 0px 10px #b393d3, 0px 0px 20px #e0dce4; 
+}
+
+h3 {
+  font-size: 4.5rem;
+  font-weight: 650;
+  font-family: 'Niconne', cursive; 
+  color: #72548c;
+  text-shadow:	2px 2px 0px  #465bd4,
+  						4px 4px 0px #ee4b2b,
+               			6px 6px 0px #2da14a,
+               			8px 8px 0px #ff7f50,
+               			10px 10px 0px #553c9a;
+}
+
+
+
+.entete {
+	text-align: center;
+}
+
+#aboutme {
+	margin: 15px;
+	border-color: rgb(248, 248, 248);
+	background-color: rgb(76, 85, 188);
+	padding: 4rem;
+	position: relative;
+	border: 3px solid black;
+}
+
+footer {
+    text-align: center;
+}
+
+table, th, td {
+  border: 1px solid; 
+}
+
+td, th {
+	padding: 1px 8px;
+}
+
+#logo {
+	text-align: right;
+}
+
+.fade {
+    /*  boutons avec transition */
+    background-color: rgb(87, 126, 232);  /*  bleu poour l'arriere plan */
+    color: Black;                 
+    transition: background-color 1s; /* animation 1 seconde */
+    font-family: "Lucida Console", "Courier New", monospace; 
+    padding: 8px 15px;           /* espacement interne */
+    border: none;                /* taille bordure, ici none= il y en a pas */
+    border-radius: 4px;          /* coins  arrondis */
+    cursor: pointer;             /* curseur devient main au survol */
+}
+
+.fade:hover {
+    /* survol de la souris */
+    background-color: rgb(198, 213, 74); 
+}
+/* pour chacun des élements suivants, indiquez quelle partie de la page web est définie par ces propriétés de style. Ensuite, modifiez-les à votre goût  */
+.mylabel { /* correspond au label comme le delimiteur, pole...*/
+    background-color: #ff6347; /* couleur  */
+    font-family: 'Times New Roman', serif; /* police */
+    font-variant: normal; /* texte en casse normale */
+    font-size: 100%; /* taille  police  */
+    padding: 5px; /* espace autour du texte */
+    border-right: 2px solid #d97a5a; /* bordure droite */
+    border-bottom: 2px solid #d97a5a; /* bordure du bas  */
+    border-radius: 10% 50% / 20% 30%; 
+}
+
+#container { /*correspond a l'analyse de fichier */
+    background-color: #f0e68c; /* couleur du fond  */
+    padding: 10px; /*  espace intérieur */
+    padding-bottom: 10%; /* Espace en bas */
+    width: 70%; /* largeur  */
+    margin-left: 15%; /* centrer la marge  */
+    height: auto; /* hauteur auto pour s'adapter a tout le monde */
+    min-height: 200px; /* hauteur minimum  */
+    position: relative;
+}
+
+#page-wrapper {
+    width: 800px;
+    background: #dcdcdc;
+    padding: 2em;
+    margin: 2em auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    border: none; 
+}
+/* Je ne vais tout commenter car j'utilise tout le temps les mêmes codes, juste les valeurs changent, je vais juste dire à quopi ca correspond dans le html */
+#Global { /*correspond aux 3 parametre ci desssous */
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    border: none;
+    display: block; 
+}
+
+#Global #fileDisplayArea { /*correspond a ou charge le texte */
+    width: 45%; 
+    font-size: 0.8em; 
+    height: 300px; 
+    overflow: auto; 
+    float: left; 
+    margin-right: 5px;
+}
+
+#Global #page-analysis { /*correspond a la aprtie d'analyse, quand on clique sur les bouttons */
+    width: 45%; 
+    background: none;
+    height: 300px; 
+    overflow: auto;
+    margin-left: 0; 
+    margin-bottom: 20px; 
+    float: left; 
+}
+
+#chartContainer { /*correspond au graphique */
+    width: 100%; 
+    height: 500px; 
+    margin-top: 20px; 
+    clear: both; /* ici j'ai ajouter both car sinon le graphique se mettait sur la gauche, c'est donc pour le forcer a etre en dessous des deux autre elements */
+}
+
+
+#logger3{ /*correspond aux messages d'erreurs */
+	color:red;
+}
+
+/* indiquez ce qui est défini par les propriétés suivantes (special)et modifiez-les à votre goût */
+
+.special {
+    position: relative; /* position relatif signifie qu'elle change et donc n'est pas fixe, c'est pour ca qu'on a special after et before, tout est relatif a ces etats */
+    padding: 1em 1em; /* espace a l'interieur pour le texte */
+    border: none; /* bordure, il n'y en a pas */
+    background-color: transparent; /* couleur du fond */
+    cursor: pointer; /* le curseur devient main quand on survole */
+    outline: none; /*  bordus de focus, il n'y en a pas*/
+    font-size: 14px; /* taille de police  */
+    margin: 2em 0.4em; /*  marge */
+    font-family: "Lucida Console", "Courier New", monospace; /* police */
+}
+
+.special::after,
+.special::before {
+    content: ''; 
+    position: absolute; /* absolute signifie que sa positio, se fera en fonction de special */
+    display: block; 
+    width: 70%; /* largeur */
+    height: 50%; /* hauteur */
+    border: 6px solid; /* bordure  */
+    transition: all 0.3s ease-out; /* transition  */
+    border-radius: 8px; /* bordures  arrondies */
+}
+
+.special::after {
+    bottom: 0; /* position en bas */
+    right: 0; /* position a droite */
+    border-top-color: transparent; /* couleur bordure en haut */
+    border-left-color: transparent; /* couleur bordure a gauche*/
+    border-bottom-color: #d4af37; /* couleur en bas */
+    border-right-color: #d4af37; /* couleur a droite */
+}
+
+.special::before {
+    top: 0; /* position en haut */
+    left: 0; /* position a gauche */
+    border-bottom-color: transparent; /* couleur bordure en bas */
+    border-right-color: transparent; /* couleur bordure a droite */
+    border-top-color: #b6a0a7; /* couleur bordure en haut */
+    border-left-color: #b6a0a7; /* couleur bordure a gauche */
+}
+
+.special:hover:after,
+.special:hover:before {
+    width: 100%; /* largeur */
+    height: 100%; /* hauteur */
+}
+
+
+/* indiquez ce qui est défini par les propriétés suivantes (special)et modifiez-les à votre goût */
+
+.rainbowBtn {
+    display: block;
+    margin: auto; /* boutton centré */
+    width: 250px; /* largeur du boutton */
+    height: 70px; /* hauteur du boutton */
+    text-align: center; /* texte dans le bouton centré aussi */
+    line-height: 70px; /* texte centré masi à la vertical */
+    color: #fff; /* couleur du texte */
+    font-size: 18px; /* taille de police  */
+    text-decoration: none;  /* décoration supplémentaire masi il y en a pas */
+    font-family: "Lucida Console", "Courier New", monospace; /* police */
+    box-sizing: border-box; /* les bordures */
+    background: linear-gradient(90deg, #ff6347, #ff4500, #ffd700, #32cd32);  /* couleur en dégradé */
+    background-size: 400%; /* taille du dégradé */
+    border-radius: 50px; /* coins  arrondis */
+    z-index: 1; /* le boutton est au dessus des autres elements */
+}
+
+.rainbowBtn:hover {
+    animation: animate 5s linear infinite; /* animation rapide */
+}
